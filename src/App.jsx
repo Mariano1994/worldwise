@@ -1,7 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Product } from "./pages/Product";
+import { Pricing } from "./pages/Pricing";
+import { Home } from "./pages/Home";
+
 export function App() {
   return (
     <>
-      <h1>World Wise app</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="product" element={<Product />} />
+          <Route path="pricing" element={<Pricing />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
