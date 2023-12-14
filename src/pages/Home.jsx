@@ -1,7 +1,13 @@
+import { Link } from "react-router-dom";
+import { PageNav } from "../components/PageNav";
+
 export function Home() {
   return (
     <>
-      <strong>Worldwise</strong>
+      <div>
+        <PageNav />
+        <h1>Worldwise</h1>
+      </div>
     </>
   );
 }
