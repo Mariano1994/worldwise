@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const BASE_URL = "http://localhost:9000";
 
@@ -31,4 +31,10 @@ const CitiesProvider = ({ children }) => {
   );
 };
 
-export { CitiesProvider };
+const useCities = () => {
+  const context = useContext(CitiesContext);
+  if (context === undefined)
+    throw new Error("CitiesContex was uses outside the CitiesProvider");
+  return context;
+};
+export { CitiesProvider, useCities };
