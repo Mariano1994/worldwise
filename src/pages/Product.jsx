@@ -1,7 +1,14 @@
+import PageNav from "../components/PageNav/PageNav";
+
 function Product() {
   return (
     <>
-      <strong>Product</strong>
+      <div>
+        <PageNav />
+      </div>
+      <div>
+        <strong>Products</strong>
+      </div>
     </>
   );
 }
