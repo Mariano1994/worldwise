@@ -23,7 +23,6 @@ function CountryList({ cities, isLoading }) {
           return <CountryItem country={country} key={country.id} />;
         })}
       </ul>
-      ;
     </>
   );
 }
