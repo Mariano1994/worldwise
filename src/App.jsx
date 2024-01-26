@@ -59,8 +59,8 @@ export function App() {
               element={<CountryList cities={cities} isLoading={isLoading} />}
             />
             <Route path="form" element={<p> Form</p>} />
-            {/* ================ */}
           </Route>
+          {/* ================ */}
           <Route path="login" element={<Login />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
